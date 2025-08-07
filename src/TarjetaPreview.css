@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Grotesk:wght@400;600&display=swap');
+
+.tarjetas-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1cm;
+  background: #fff;
+  padding: 1cm;
+}
+
+.tarjeta {
+  min-height: 8cm;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9pt;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 10px 5px 10px;
+  height: auto;
+}
+
+/* ----------- Frente ----------- */
+.situacion {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 9pt;
+  white-space: nowrap;
+}
+
+.rol {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  white-space: nowrap;
+}
+
+.instruccion {
+  font-size: 7pt;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;            /* permite dividir palabras con guiones */
+  word-break: break-word;   /* fuerza el corte si es necesario */
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.desarrollo-container {
+  border: 1px solid black;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  margin-bottom: 4px;
+}
+
+.desarrollo-texto {
+  font-size: 8pt;
+  font-family: 'Montserrat', sans-serif;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  overflow: visible;
+  text-align: left;
+  align-self: flex-start;
+  margin: 0;
+}
+
+.tema {
+  margin: 0;
+  font-size: 7pt;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* ----------- Dorso ----------- */
+.dorso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  flex-direction: column;
+  padding: 10px;
+}
+
+
+
+.claqueta-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.claqueta-img {
+ width: 100%;      /* ocupa todo el ancho del contenedor */
+  max-width: 130px; /* o el ancho máximo que quieras */
+  height: auto;     /* mantiene proporción sin distorsión */
+  display: block;   /* elimina espacio inferior típico de imágenes inline */
+  object-fit: contain; /* en caso de contener la imagen en el área */
+}
+
+.correo-roleplay {
+  display: flex;
+   margin-top: 10px;
+  padding-top: 0;
+  line-height: 1;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 11pt;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.correo {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.roleplay {
+  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: none;
+  font-size: 11pt;
+}
+
